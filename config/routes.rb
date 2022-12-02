@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  get '/blogs', to: 'blogs#index'
-  
+  get '/posts', to: 'posts#index'
+  resources :posts
 end
