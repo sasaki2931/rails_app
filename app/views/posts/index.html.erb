@@ -12,7 +12,7 @@
     <td><%= link_to '新しくブログを投稿する', new_post_path %></td>
     <td><%= link_to '詳細を確認する', post_path(post.id) %></td>
     <td><%= link_to "ブログを編集する", edit_post_path(post.id) %></td>
-    <td><%= link_to 'ブログを削除する', post_path(post.id), method: :delete %></td>
+    <td><%= link_to "ブログを編集する", edit_post_path(post.id), data: { confirm: '本当に編集していいですか？' } %></td>
   </tr>
 <% end %>
 </table>
