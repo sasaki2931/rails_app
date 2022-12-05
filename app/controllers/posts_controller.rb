@@ -21,7 +21,6 @@ class PostsController < ApplicationController
       end
     end
   end
-
   
   def show
     @post = Post.find(params[:id])
@@ -49,7 +48,6 @@ class PostsController < ApplicationController
     @post = Post.new(post_params)
     render :new if @post.invalid?
   end
-  
 
  private
 
@@ -59,6 +57,6 @@ class PostsController < ApplicationController
 
  def set_post
   @post = Post.find(params[:id])
-end
+ end
   
 end
