@@ -8,6 +8,6 @@ class PostsController < ApplicationController
 
   def create
     Post.create(title: params[:post][:title], content: params[:post][:content])
-    redirect_to "/posts/new"
+    redirect_to new_post_path
   end
 end
