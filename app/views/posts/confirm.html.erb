@@ -7,6 +7,6 @@
   <p>タイトル:<%= @post.title %></p>
   <p>本文:<%= @post.content %></p>
   <%= form.submit  "登録する" %>
+  <%= form.submit "戻る", name: 'back' %>
 <% end %>
 
-<%= link_to '戻る', :back %>
